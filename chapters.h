@@ -6,5 +6,6 @@
 #define CHAPTERS_H
 
 void chapter_01();
-
+void chapter_02();
+void chapter_03();
 #endif //CHAPTERS_H

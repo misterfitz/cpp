@@ -5,4 +5,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_executable(ProgrammingPrinciplesPractice main.cpp
         chapter_01.cpp
-        chapters.h)
+        chapters.h
+        chapter_02.cpp
+        chapter_03.cpp)

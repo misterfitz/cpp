@@ -2,21 +2,33 @@
 #include "chapters.h"
 
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the
-    // <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+    char selection;
+    std::cout << "Please Input a number: ";
+    std::cin >> selection;
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code.
-        // We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/>
-        // breakpoint for you, but you can always add more by pressing
-        // <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
+    // technically this part is skipping ahead to chapter 3
+    while (selection) {
+        switch (selection) {
+            case '1':
+                chapter_01();
+                break;
+            case '2':
+                chapter_02();
+                break;
+            case '3':
+                chapter_03();
+            break;
+            case 'x':
+                return 0;
+            default:
+                break;
+
+        }
+
+        std::cout << "Please Input a number: ";
+        std::cin >> selection;
     }
 
-    // chapter_one();
-    chapter_01();
     return 0;
 }
 
