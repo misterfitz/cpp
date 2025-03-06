@@ -5,7 +5,6 @@ int main() {
     char selection;
     std::cout << "Please Input a number: ";
     std::cin >> selection;
-
     // technically this part is skipping ahead to chapter 3
     while (selection) {
         switch (selection) {
