@@ -19,6 +19,7 @@ int main() {
                 chapter_03();
             break;
             case 'x':
+                printf("Thanks for playing, goodbye");
                 return 0;
             default:
                 break;
