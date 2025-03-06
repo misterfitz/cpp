@@ -1,7 +1,7 @@
 #include <iostream>
 #include "chapters.h"
 
-int main(void) {
+int main() {
     char selection;
     std::cout << "Please Input a number: ";
     std::cin >> selection;
