@@ -1,6 +1,13 @@
 #include <iostream>
 #include "chapters.h"
 
+using namespace std;
+
+void error(string err) {
+    printf("%s\n", err.c_str());
+    exit(1);
+}
+
 int main() {
     char selection;
     std::cout << "Please Input a number: ";
@@ -17,7 +24,10 @@ int main() {
                 break;
             case '3':
                 chapter_03();
-            break;
+                break;
+            case '4':
+                chapter_04();
+                break;
             case 'x':
                 return 0;
             default:
