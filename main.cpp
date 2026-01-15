@@ -5,7 +5,6 @@ int main() {
     char selection;
     std::cout << "Please Input a number: ";
     std::cin >> selection;
-
     // technically this part is skipping ahead to chapter 3
     while (selection) {
         switch (selection) {
@@ -19,10 +18,10 @@ int main() {
                 chapter_03();
             break;
             case 'x':
+                printf("Thanks for playing, goodbye");
                 return 0;
             default:
                 break;
-
         }
 
         std::cout << "Please Input a number: ";
@@ -31,8 +30,3 @@ int main() {
 
     return 0;
 }
-
-// TIP See CLion help at <a
-// href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>.
-//  Also, you can try interactive lessons for CLion by selecting
-//  'Help | Learn IDE Features' from the main menu.
