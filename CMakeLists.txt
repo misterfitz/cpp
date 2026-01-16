@@ -1,11 +1,17 @@
 cmake_minimum_required(VERSION 3.30)
 project(ProgrammingPrinciplesPractice)
 
+# Fix behavior of CMAKE_CXX_STANDARD when targeting macOS.
+if (POLICY CMP0025)
+    cmake_policy(SET CMP0025 NEW)
+endif ()
+
+
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(ProgrammingPrinciplesPractice src/main.cpp
-        src/chapters.h
-        src/chapter_01.cpp
-        src/chapter_02.cpp
-        src/chapter_03.cpp
-        src/chapter_04.cpp)
+add_executable(ProgrammingPrinciplesPractice main.cpp
+        chapters.h
+        chapter_01.cpp
+        chapter_02.cpp
+        chapter_03.cpp
+        chapter_04.cpp)
