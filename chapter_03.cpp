@@ -5,6 +5,8 @@
 #include <cstdio>
 #include <iostream>
 #include <ostream>
+#include <vector>
+#include <string>
 
 using namespace std;
 
