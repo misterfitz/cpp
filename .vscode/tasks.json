@@ -1,0 +1,26 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "CMake: Build",
+            "type": "shell",
+            "command": "cmake -B \"${workspaceFolder}/build\" -DCMAKE_BUILD_TYPE=Debug -S \"${workspaceFolder}\" && cmake --build \"${workspaceFolder}/build\" --parallel",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "CMake: Build and Run",
+            "type": "shell",
+            "command": "cmake -B \"${workspaceFolder}/build\" -DCMAKE_BUILD_TYPE=Debug -S \"${workspaceFolder}\" && cmake --build \"${workspaceFolder}/build\" --parallel && \"${workspaceFolder}/build/ProgrammingPrinciplesPractice\"",
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
